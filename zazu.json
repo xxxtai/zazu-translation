@@ -7,39 +7,6 @@
   "blocks": {
     "input": [
       {
-        "title": "translate to chinese",
-        "id": "translation-chinese",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "cn",
-        "script": "src/cn.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to traditional chinese",
-        "id": "translation-traditional-chinese",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "tw",
-        "script": "src/tw.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to japanese",
-        "id": "translation-japanese",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "ja",
-        "script": "src/ja.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
         "title": "translate to english",
         "id": "translation-english",
         "type": "PrefixScript",
@@ -48,73 +15,7 @@
         "prefix": "en",
         "script": "src/en.js",
         "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to spanish",
-        "id": "translation-spanish",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "es",
-        "script": "src/es.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to french",
-        "id": "translation-french",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "fr",
-        "script": "src/fr.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to italian",
-        "id": "translation-italian",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "it",
-        "script": "src/it.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to polish",
-        "id": "translation-polish",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "pl",
-        "script": "src/pl.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to portuguese",
-        "id": "translation-portuguese",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "pt",
-        "script": "src/pt.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
-      },
-      {
-        "title": "translate to russian",
-        "id": "translation-russian",
-        "type": "PrefixScript",
-        "space": true,
-        "args": "Required",
-        "prefix": "ru",
-        "script": "src/ru.js",
-        "debounce": 100,
-        "connections": ["copy", "add-to-anki"]
+        "connections": ["copy"]
       }
     ],
     "output": [
@@ -128,11 +29,6 @@
         "id": "copy-to-clipboard",
         "type": "CopyToClipboard",
         "text": "{value}"
-      },
-      {
-        "id": "add-to-anki",
-        "type": "UserScript",
-        "script": "src/utils/addToAnki.js"
       }
     ]
   }
