@@ -14,7 +14,7 @@
         "args": "Required",
         "prefix": "en",
         "script": "src/en.js",
-        "debounce": 100,
+        "debounce": 2000,
         "connections": ["copy"]
       }
     ],
